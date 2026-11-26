@@ -15,7 +15,7 @@ https://chrome.google.com/webstore/devconsole
 
 **Summary (حد أقصى 132 حرفاً):**
 
-> إخفاء الحسابات التافهة على إنستغرام وفيسبوك وتيك توك وX بقائمة جماعية يبنيها المستخدمون.
+> إخفاء الحسابات التافهة على إنستغرام وفيسبوك وتيك توك وX وريدت بقائمة جماعية يبنيها المستخدمون.
 
 **Category:** Social & Communication
 
@@ -26,7 +26,7 @@ https://chrome.google.com/webstore/devconsole
 ```
 NO HABAL ⛔ — نظّف صفحاتك من المحتوى التافه
 
-إضافة تخفي حسابات المحتوى التافه على Instagram وFacebook وTikTok وX، اعتماداً على قائمة جماعية يبنيها المستخدمون أنفسهم.
+إضافة تخفي حسابات المحتوى التافه على Instagram وFacebook وTikTok وX وReddit، اعتماداً على قائمة جماعية يبنيها المستخدمون أنفسهم.
 
 ✦ كيف تعمل؟
 • بجانب اسم كل حساب يظهر علم أخضر صغير. اضغطه للإبلاغ، فيختفي الحساب من صفحاتك فوراً.
@@ -50,7 +50,7 @@ NO HABAL ⛔ — نظّف صفحاتك من المحتوى التافه
 **English description (اختياري، لإضافة لغة ثانية):**
 
 ```
-NO HABAL hides low-quality accounts on Instagram, Facebook, TikTok and X using a community-built list.
+NO HABAL hides low-quality accounts on Instagram, Facebook, TikTok, X and Reddit using a community-built list.
 Flag an account with one click to hide it instantly for you; once enough different users report it, it is hidden for everyone.
 Includes undo, separate lists per platform, auto-skipping and muting of blocked reels/videos, and an optional (off by default)
 gradual auto-block on Instagram (max 35/day). No login, no personal data, no tracking.
@@ -68,7 +68,7 @@ gradual auto-block on Instagram (max 35/day). No login, no personal data, no tra
 
 **Single purpose:**
 
-> Hide posts and videos from accounts on a community-maintained list on Instagram, Facebook, TikTok and X, and let users report accounts to that list.
+> Hide posts and videos from accounts on a community-maintained list on Instagram, Facebook, TikTok, X and Reddit, and let users report accounts to that list.
 
 **Permission justifications:**
 
@@ -77,7 +77,7 @@ gradual auto-block on Instagram (max 35/day). No login, no personal data, no tra
 | `storage` | Stores the approved account lists, the user's own reports, settings and hidden-post counters locally. |
 | `alarms` | Refreshes the community list every 30 minutes and runs the optional, rate-limited auto-block queue. |
 | Host: `bohiqxxispuwipmfijgn.supabase.co` | The extension's own backend: downloads the approved list and submits/withdraws reports. |
-| Content scripts on instagram.com, facebook.com, tiktok.com, x.com, twitter.com | Reads author usernames on the page to hide listed accounts and to add the report button. Page content is processed locally and never sent. |
+| Content scripts on instagram.com, facebook.com, tiktok.com, x.com, twitter.com, reddit.com | Reads author usernames on the page to hide listed accounts and to add the report button. Page content is processed locally and never sent. |
 
 **Remote code:** No, I am not using remote code.
 

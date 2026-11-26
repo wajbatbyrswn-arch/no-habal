@@ -39,7 +39,7 @@ node scripts/build.mjs
 7. **Notes to Reviewer** (مهم لتسريع المراجعة):
 
    ```
-   No login is needed. Open instagram.com / facebook.com / tiktok.com / x.com: a small green flag
+   No login is needed. Open instagram.com / facebook.com / tiktok.com / x.com / reddit.com: a small green flag
    appears next to account names; clicking it hides that account locally and sends a report to our
    Supabase backend (bohiqxxispuwipmfijgn.supabase.co). The optional Instagram auto-block is OFF by
    default (popup toggle) and is limited to 35 blocks/day performed through Instagram's own menu.

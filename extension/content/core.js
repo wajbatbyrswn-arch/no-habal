@@ -129,14 +129,16 @@
   }
 
   // item.btnClass: صنف إضافي لتنسيق خاص بالمنصة (مثل nh-tt لتيك توك)
+  // item.btnSlot:  اسم slot في واجهة ويب كومبوننت (ريدت يعرض شريط المعلومات عبر shadow DOM)
   function attachButton(item) {
-    const { anchor, username, container, btnClass } = item;
+    const { anchor, username, container, btnClass, btnSlot } = item;
     if (!anchor || anchor.dataset.nhBtn === username) return;
     anchor.dataset.nhBtn = username;
     const old = anchor.parentElement?.querySelector(':scope > .nh-report-btn');
     if (old) old.remove();
     const btn = makeButton(username, container);
     if (btnClass) btn.classList.add(btnClass);
+    if (btnSlot) btn.slot = btnSlot;
     anchor.insertAdjacentElement('afterend', btn);
   }
 

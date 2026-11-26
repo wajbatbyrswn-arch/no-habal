@@ -14,7 +14,7 @@ const chrome = globalThis.browser ?? globalThis.chrome;
 const SUPABASE_URL = 'https://bohiqxxispuwipmfijgn.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_PC6jclCqZQiyyNJ_qv4uaA_VirW49YD';
 
-const PLATFORMS = ['instagram', 'facebook', 'tiktok', 'x'];
+const PLATFORMS = ['instagram', 'facebook', 'tiktok', 'x', 'reddit'];
 const SYNC_MINUTES = 30;
 const PING_EVERY_MS = 24 * 60 * 60 * 1000;
 const PAGE_SIZE = 1000;

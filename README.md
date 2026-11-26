@@ -1,6 +1,6 @@
 # NO HABAL ⛔
 
-إضافة متصفح (Manifest V3) تخفي حسابات المحتوى التافه على Instagram وFacebook وTikTok وX، بقائمة جماعية يبنيها المستخدمون.
+إضافة متصفح (Manifest V3) تخفي حسابات المحتوى التافه على Instagram وFacebook وTikTok وX وReddit، بقائمة جماعية يبنيها المستخدمون.
 
 **الموقع والتحميل:** https://wajbatbyrswn-arch.github.io/no-habal/
 
@@ -10,6 +10,7 @@
 |---|---|
 | `extension/` | الإضافة: `manifest.json`، و`background/service-worker.js`، و`content/` (محرك الإخفاء ومحوّل لكل منصة)، و`popup/` |
 | `supabase/schema.sql` | الجداول، ودوال `submit_report` و`withdraw_report` و`ping_user`، وسياسات RLS |
+| `supabase/migrations/` | ترحيلات لمرة واحدة على قاعدة البيانات المنشورة (مثل إضافة منصة Reddit) |
 | `docs/` | موقع التحميل (GitHub Pages) |
 | `store/` | نصوص النشر على متاجر الإضافات |
 

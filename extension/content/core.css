@@ -71,6 +71,25 @@
   top: -3px;
 }
 
+/* ريدت: علامات غير مرئية نزرعها قبل العناصر التي لا تعرض رابط اسم في DOM العادي */
+.nh-reddit-anchor,
+.nh-reddit-profile-anchor {
+  display: none !important;
+}
+/* زر الإبلاغ داخل شريط المعلومات في الواجهة الجديدة (shadow DOM slot) */
+.nh-report-btn[slot="credit-bar"],
+.nh-report-btn[slot="author"] {
+  width: 18px;
+  height: 18px;
+  margin-inline-start: 2px;
+  vertical-align: text-bottom;
+}
+/* الواجهة القديمة (old.reddit.com): حجم أصغر بجانب اسم المؤلف */
+.thing .nh-report-btn {
+  width: 16px;
+  height: 16px;
+}
+
 /* بعد الإبلاغ: دائرة حمراء ممتلئة بعلامة صح بيضاء */
 .nh-report-btn.nh-done {
   opacity: 1;

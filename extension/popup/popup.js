@@ -57,6 +57,7 @@
     $('list-facebook').textContent = fmt(d.lists.facebook);
     $('list-tiktok').textContent = fmt(d.lists.tiktok);
     $('list-x').textContent = fmt(d.lists.x);
+    $('list-reddit').textContent = fmt(d.lists.reddit);
 
     const b = d.block;
     $('block-panel').classList.toggle('hidden', !s.autoBlock);

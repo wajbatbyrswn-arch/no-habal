@@ -21,7 +21,7 @@ create extension if not exists pgcrypto;  -- gen_random_uuid()
 create table if not exists public.accounts (
   id            uuid        primary key default gen_random_uuid(),
   platform      text        not null
-                check (platform in ('instagram', 'facebook', 'tiktok', 'x')),
+                check (platform in ('instagram', 'facebook', 'tiktok', 'x', 'reddit')),
   username      text        not null
                 check (char_length(username) between 1 and 100),
   status        text        not null default 'pending'
@@ -216,7 +216,7 @@ declare
   v_inserted    integer;
 begin
   -- التحقق من المدخلات
-  if v_platform not in ('instagram', 'facebook', 'tiktok', 'x') then
+  if v_platform not in ('instagram', 'facebook', 'tiktok', 'x', 'reddit') then
     return json_build_object('ok', false, 'message', 'invalid_platform');
   end if;
 
